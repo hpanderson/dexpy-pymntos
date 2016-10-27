@@ -1,0 +1,6 @@
+# text editor files
+*~
+
+# vagrant files
+.vagrant
+*.log
