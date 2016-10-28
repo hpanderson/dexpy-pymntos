@@ -3,7 +3,7 @@
 export CONDA_ROOT=/opt/conda
 export DEXPY_ENV_NAME=dexpy_env
 export DEXPY_ENV_ROOT=$CONDA_ROOT/envs/$DEXPY_ENV_NAME
-export DEXPY_DEPENDENCIES="numpy scipy pandas patsy statsmodels matplotlib jupyter"
+export DEXPY_DEPENDENCIES="numpy scipy pandas patsy statsmodels matplotlib"
 export PATH=$DEXPY_ENV_ROOT/bin:$CONDA_ROOT/bin:$PATH
 
 # setup conda python3 environment for jupyter
@@ -18,6 +18,8 @@ if [ ! -d ${DEXPY_ENV_ROOT} ]; then
 else
     conda install -y -n ${DEXPY_ENV_NAME} ${DEXPY_DEPENDENCIES}
 fi
+
+conda install -y -n ${DEXPY_ENV_NAME} -c damianavila82 rise
 
 activate dexpy_env
 pip install dexpy
