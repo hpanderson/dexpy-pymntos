@@ -19,9 +19,17 @@ else
     conda install -y -n ${DEXPY_ENV_NAME} ${DEXPY_DEPENDENCIES}
 fi
 
+# use rise for interactive jupyter-based slides
 conda install -y -n ${DEXPY_ENV_NAME} -c damianavila82 rise
 
 source activate dexpy_env
-pip install dexpy
+
+# install prettypandas for nice tables
 pip install prettypandas
+
+# install latest development version of dexpy
+git clone https://github.com/statease/dexpy.git
+cd dexpy
+python setup.py install
+
 mkdir -p /vagrant/notebook
