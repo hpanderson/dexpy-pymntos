@@ -21,6 +21,6 @@ fi
 
 conda install -y -n ${DEXPY_ENV_NAME} -c damianavila82 rise
 
-activate dexpy_env
+source activate dexpy_env
 pip install dexpy
 mkdir -p /vagrant/notebook
