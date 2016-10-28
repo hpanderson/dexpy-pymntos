@@ -23,4 +23,5 @@ conda install -y -n ${DEXPY_ENV_NAME} -c damianavila82 rise
 
 source activate dexpy_env
 pip install dexpy
+pip install prettypandas
 mkdir -p /vagrant/notebook
