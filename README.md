@@ -9,6 +9,12 @@ It uses [Jupyter Notebook](http://jupyter.org/) and
 install [RISE](https://github.com/damianavila/RISE) for a live presentation
 (i.e. you can edit the code while presenting the slides).
 
+You can view the
+[slide deck here](https://hpanderson.github.io/dexpy-pymntos/#/),
+and also see the
+[notebook it's based on](https://github.com/hpanderson/dexpy-pymntos/blob/master/dexpy-demo.ipynb)
+directly in github.
+
 
 Thanks to Amit Saha for the idea of using gh-pages for hosting the presentation,
 in [this blog post](http://echorand.me/presentation-slides-with-jupyter-notebook.html).
