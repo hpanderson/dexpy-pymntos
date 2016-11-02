@@ -11,7 +11,7 @@ jupyter nbconvert --to slides dexpy-demo.ipynb --reveal-prefix=reveal.js
 # save off files we need for gh-pages
 mkdir -p /tmp/workspace
 cp dexpy-demo.slides.html /tmp/workspace/index.html
-cp reveal.js /tmp/workspace
+cp -r reveal.js /tmp/workspace
 
 # switch to gh-pages and remove everything
 git checkout -fB gh-pages
