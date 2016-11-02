@@ -30,5 +30,5 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   # launch ipython
-  config.vm.provision :shell, run: "always", path: "start_jupyter.sh"
+  config.vm.provision :shell, run: "always", path: "start-jupyter.sh"
 end
