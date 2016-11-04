@@ -6,6 +6,10 @@ export DEXPY_ENV_ROOT=$CONDA_ROOT/envs/$DEXPY_ENV_NAME
 export DEXPY_DEPENDENCIES="numpy scipy pandas patsy statsmodels matplotlib"
 export PATH=$DEXPY_ENV_ROOT/bin:$CONDA_ROOT/bin:$PATH
 
+# install apt packages first
+sudo apt-get update
+sudo apt-get install -y graphviz
+
 # setup conda python3 environment for jupyter
 if [[ ! -d ${CONDA_ROOT} ]]; then
     echo "Installing Miniconda..."
@@ -26,6 +30,9 @@ source activate dexpy_env
 
 # install prettypandas for nice tables
 pip install prettypandas
+
+# install python bindings for graphviz
+pip install graphviz
 
 # install latest development version of dexpy
 git clone https://github.com/statease/dexpy.git

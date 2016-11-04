@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/vagrant/dexpy-pymntos"
   config.vm.network :forwarded_port, guest: 8888, host: 8888
   config.vm.provision :shell, inline: "sudo echo \"nameserver 208.67.222.222\" > /etc/resolv.conf"
-  config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, run: "always", path: "bootstrap.sh"
 
   if Vagrant::Util::Platform.windows?
     # You MUST have a ~/.ssh/github_rsa (GitHub specific) SSH key to copy to VM
