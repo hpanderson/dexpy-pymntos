@@ -34,6 +34,10 @@ pip install prettypandas
 # install python bindings for graphviz
 pip install graphviz
 
+# this eliminates a seaborn warning about importing from IPython
+# see: https://github.com/mwaskom/seaborn/issues/874
+pip install ipywidgets
+
 # install latest development version of dexpy
 git clone https://github.com/statease/dexpy.git
 cd dexpy
