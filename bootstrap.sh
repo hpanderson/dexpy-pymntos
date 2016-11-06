@@ -3,7 +3,7 @@
 export CONDA_ROOT=/opt/conda
 export DEXPY_ENV_NAME=dexpy_env
 export DEXPY_ENV_ROOT=$CONDA_ROOT/envs/$DEXPY_ENV_NAME
-export DEXPY_DEPENDENCIES="numpy scipy pandas patsy statsmodels matplotlib seaborn"
+export DEXPY_DEPENDENCIES="numpy scipy pandas patsy statsmodels matplotlib seaborn bokeh"
 export PATH=$DEXPY_ENV_ROOT/bin:$CONDA_ROOT/bin:$PATH
 
 # install apt packages first
