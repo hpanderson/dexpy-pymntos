@@ -12,6 +12,7 @@ jupyter nbconvert --to slides dexpy-demo.ipynb --template output_toggle --reveal
 mkdir -p /tmp/workspace
 mv dexpy-demo.slides.html /tmp/workspace/index.html
 cp -r reveal.js /tmp/workspace
+cp -r custom.css /tmp/workspace
 
 # create a folder for gh-pages branch
 mkdir -p /tmp/gh-pages
