@@ -1,4 +1,4 @@
 
-div.text_cell.rendered .rendered_html {
+div.rendered .rendered_html {
     overflow-y: hidden;
 }
