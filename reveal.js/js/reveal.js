@@ -420,7 +420,8 @@
 		setupPostMessage();
 
 		// Prevent the slides from being scrolled out of view
-		setupScrollPrevention();
+		// disabled by hpa - scrolling jupyter slides is convenient
+		// setupScrollPrevention();
 
 		// Resets all vertical slides so that only the first is visible
 		resetVerticalSlides();
