@@ -6,7 +6,8 @@ export DEXPY_ENV_ROOT=$CONDA_ROOT/envs/$DEXPY_ENV_NAME
 export PATH=$DEXPY_ENV_ROOT/bin:$CONDA_ROOT/bin:$PATH
 
 source activate $DEXPY_ENV_NAME
-jupyter nbconvert --to slides dexpy-demo.ipynb --template output_toggle --reveal-prefix=reveal.js --ClearOutputPreprocessor.enabled=True --ExecutePreprocessor.enabled=True
+jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled=True --ExecutePreprocessor.enabled=True
+jupyter nbconvert --to slides dexpy-demo.ipynb --template output_toggle --reveal-prefix=reveal.js
 
 # save off files we need for gh-pages
 mkdir -p /tmp/workspace
