@@ -13,6 +13,7 @@ mkdir -p /tmp/workspace
 mv dexpy-demo.slides.html /tmp/workspace/index.html
 cp -r reveal.js /tmp/workspace
 cp -r custom.css /tmp/workspace
+cp -r dexpy-demo.ipynb /tmp/workspace
 
 # create a folder for gh-pages branch
 mkdir -p /tmp/gh-pages
