@@ -12,7 +12,7 @@ jupyter nbconvert --to slides dexpy-demo.nbconvert.ipynb --template output_toggl
 # save off files we need for gh-pages
 mkdir -p /tmp/workspace
 mv dexpy-demo.nbconvert.slides.html /tmp/workspace/index.html
-mv dexpy-demo.nbconvert.ipynb /tmp/workspace/dexpy-demo.nbconvert.ipynb
+mv dexpy-demo.nbconvert.ipynb /tmp/workspace/dexpy-demo.ipynb
 cp -r reveal.js /tmp/workspace
 cp -r custom.css /tmp/workspace
 
