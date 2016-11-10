@@ -44,6 +44,7 @@ cd dexpy
 python setup.py install
 
 mkdir -p /vagrant/notebook
+mkdir -p /vagrant/notebook/img
 
 git config --global user.name "Hank Anderson"
 git config --global user.email "hank.p.anderson@gmail.com"
