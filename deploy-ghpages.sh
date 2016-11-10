@@ -16,6 +16,9 @@ mv dexpy-demo.nbconvert.ipynb /tmp/workspace/dexpy-demo.ipynb
 cp -r reveal.js /tmp/workspace
 cp -r custom.css /tmp/workspace
 
+mkdir -p /tmp/workspace/img
+cp img/* /tmp/workspace/img
+
 # create a folder for gh-pages branch
 mkdir -p /tmp/gh-pages
 cp -r .git /tmp/gh-pages
