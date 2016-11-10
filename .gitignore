@@ -4,3 +4,5 @@
 # vagrant files
 .vagrant
 *.log
+
+build
